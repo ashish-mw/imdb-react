@@ -14,3 +14,7 @@ export default http;
 export const apiGetMovies = ({ cancelToken }) => {
   return http.get("/movies", { cancelToken });
 };
+
+export const apiAddMovie = ({ cancelToken, payload }) => {
+  return http.post("/movies", payload, { cancelToken });
+};
