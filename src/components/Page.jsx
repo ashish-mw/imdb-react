@@ -5,7 +5,7 @@ import Nav from "./Nav";
 const Page = (props) => {
   useEffect(() => {
     if (props.title) {
-      document.title = props.title;
+      document.title = `${props.title} | ${process.env.REACT_APP_NAME}`;
     }
   }, [props.title]);
 
